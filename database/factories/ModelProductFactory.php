@@ -1,5 +1,6 @@
-<?php
-
+ <?php
+ 
+use App\Model\Product;
 use Faker\Generator as Faker;
 
 $factory->define(App\Model\Product::class, function (Faker $faker) {
