@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\http\Resources\Product\ProductResource;
+use App\Http\Resources\Product\ProductResource;
 use App\Model\Product;
 use Illuminate\Http\Request;
 
@@ -46,7 +46,7 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Product $product)
-    {return $product;
+    {
         return new ProductResource($product);
     }
 
